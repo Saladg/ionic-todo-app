@@ -1,0 +1,7 @@
+{
+  "name": "doto",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
