@@ -16,10 +16,8 @@ import { Toast } from "@ionic-native/toast";
 })
 @Pipe({ name: "keys" })
 export class HomePage {
-  //tasks: Task[] = [];
-  tasks: Task[];
-  // the 'it-IT' helps display time in 24 hrs
-  //taskStartTime = new Date().toLocaleTimeString("it-IT");
+  tasks: Task[] = [];
+  //tasks: Task[];
   taskStartTime;
   constructor(
     public navCtrl: NavController,
@@ -50,13 +48,6 @@ export class HomePage {
       this.taskStartTime = new Date().toLocaleTimeString("it-IT");
     }, 1000);
   }
-
-  // ionViewDidLoad() {
-  //   this.getTasks();
-  //   setInterval(() => {
-  //     this.taskStartTime = new Date().toLocaleTimeString("it-IT");
-  //   }, 1000);
-  // }
 
   getTasks() {
     this.sqlite
